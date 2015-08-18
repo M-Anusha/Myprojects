@@ -1,0 +1,11 @@
+package di;
+
+public class Ceat implements Wheels {
+
+	@Override
+	public void rotate() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

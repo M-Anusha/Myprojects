@@ -1,0 +1,11 @@
+package assign_16;
+
+public class TwitterService implements MessageService {
+
+	@Override
+	public void sendMessage() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

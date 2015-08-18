@@ -1,0 +1,13 @@
+package spring_mvc;
+
+import org.springframework.web.bind.annotation.ModelAttribute;
+
+public class LoginController {
+
+	public String loginValidate(@ModelAttribute("login") Login log){
+		if(log.getUsername().equals(log.getPassword()))
+			return "Success";
+		else
+			return "Failed";
+	}
+}

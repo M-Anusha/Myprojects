@@ -1,0 +1,10 @@
+package webservices;
+
+public class HelloWorldPublisher {
+
+	public static void main(String[] args) {
+	
+
+	}
+
+}

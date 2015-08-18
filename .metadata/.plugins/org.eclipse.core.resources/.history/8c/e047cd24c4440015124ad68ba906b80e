@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script type="application/javascript">
+function loadJSON()
+{
+	var data_file="data.json";
+	 var http_request=new XMLHttpRequest();
+	
+	
+	if(window.XMLHttpRequest)	//Request obj creation
+	{	
+		xmlhttp=new XMLHttpRequest();
+	}
+	else{
+		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	
+	xmlhttp.onreadystatechange=function()	//Response obj creation
+	{
+		if(xmlhttp.readyState==4 && xmlhttp.status==200){
+			document.getElementById("t").innerHTML=xmlhttp.responseText;
+			
+		}
+	}
+	http_request.onreadystatechange=function(){
+		if(xmlhttp.readyState==4){
+			var jsonObj=JSON.parse(http_request.responseText);
+			document.getElementbyId("Name").innerHTML=jsonObj.name;
+			document.getElementbyId("Country").innerHTML=jsonObj.country;
+		}
+	}
+	xmlhttp.open("GET", data_file, true);
+	http_request.send();
+	}
+</script>
+
+<body>
+
+</body>
+</html>

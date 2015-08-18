@@ -1,0 +1,6 @@
+package jdbc;
+
+public interface EmployeeDAO {
+public void getDBConnection();
+public void closeDBConnection();
+}

@@ -1,0 +1,11 @@
+package di;
+
+public class Car {
+Wheels wheels;
+public void setWheels(Wheels wheels){
+	
+}
+public Wheels getWheels() {
+	return wheels;
+}
+}

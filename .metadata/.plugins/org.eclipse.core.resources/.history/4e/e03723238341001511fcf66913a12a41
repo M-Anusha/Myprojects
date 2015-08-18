@@ -1,0 +1,13 @@
+package spring_mvc;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class HelloController {
+	
+	@RequestMapping("hello.htm")
+	public String sayHello(){
+		return "Success";
+	}
+
+}

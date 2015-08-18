@@ -1,0 +1,6 @@
+package assign_16;
+
+public class EmailService implements sendMessage {
+	
+
+}

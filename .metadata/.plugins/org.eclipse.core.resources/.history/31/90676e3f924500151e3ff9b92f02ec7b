@@ -1,0 +1,11 @@
+package assgn20;
+
+public class BillAmountImpl implements BillAmount {
+
+	@Override
+	public int calculate(int amount) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

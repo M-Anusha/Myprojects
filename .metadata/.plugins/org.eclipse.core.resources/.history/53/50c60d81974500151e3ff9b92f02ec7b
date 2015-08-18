@@ -1,0 +1,11 @@
+package assgn20;
+
+public class BillAmountImpl implements BillAmount {
+
+	@Override
+	public int calculate(int amount) {
+		int a=(int) (amount*0.5);
+		return a;
+	}
+
+}
